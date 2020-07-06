@@ -21,9 +21,10 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Installing Node
+    - name: Installing node
       run: actions/setup-node@v2-beta 
-      node-version: 12  
+      with:
+        node-version: 12  
 
     # Runs a set of commands using the runners shell
     - name: Installing Surge
